@@ -30,16 +30,16 @@
             <h2 class="card-title">Triangle</h2>
             <p>Area (A) = 0.5 x b x h</p>
             <p class="my-2">
-              <input type="text" name="" id=""  class="border bg-gray-200 text-xl w-20 px-2 rounded-sm" placeholder="base">
+              <input type="text" name="" id="triangle-base"  class="border bg-gray-200 text-xl w-20 px-2 rounded-sm" placeholder="base">
               <span class="ml-3">cm</span>
-              <input type="text" name="" id=""  class="border bg-gray-200 text-xl w-20 px-2 ml-3 rounded-sm" placeholder="height">
+              <input type="text" name="" id="triangle-height"  class="border bg-gray-200 text-xl w-20 px-2 ml-3 rounded-sm" placeholder="height">
               <span class="ml-3">cm</span>
             </p>
             <div>
-              <p class="text-2xl">Area : <span class="font-semibold"></span> cm<sup>2</sup></p>
+              <p class="text-2xl">Area : <span id="triangle-area" class="font-semibold"></span> cm<sup>2</sup></p>
             </div>
             <div class="card-actions">
-              <button class="btn btn-primary btn-accent w-full">Calculate</button>
+              <button onclick="calculateTriangleArea()" class="btn btn-primary btn-accent w-full">Calculate</button>
             </div>
           </div>
         </div>
@@ -54,16 +54,16 @@
             <h2 class="card-title">Rectangle</h2>
             <p>Area (A) = w x l</p>
             <p class="my-2">
-              <input type="text" name="" id=""  class="border bg-gray-200 text-xl w-20 px-2 rounded-sm" placeholder="width">
+              <input type="text" name="" id="rectangle-width"  class="border bg-gray-200 text-xl w-20 px-2 rounded-sm" placeholder="width">
               <span class="ml-3">cm</span>
-              <input type="text" name="" id=""  class="border bg-gray-200 text-xl w-20 px-2 ml-3 rounded-sm" placeholder="length">
+              <input type="text" name="" id="rectangle-length"  class="border bg-gray-200 text-xl w-20 px-2 ml-3 rounded-sm" placeholder="length">
               <span class="ml-3">cm</span>
             </p>
             <div>
-              <p class="text-2xl">Area : <span class="font-semibold"></span> cm<sup>2</sup></p>
+              <p class="text-2xl">Area : <span id="rectangle-area" class="font-semibold"></span> cm<sup>2</sup></p>
             </div>
             <div class="card-actions">
-              <button class="btn btn-primary btn-accent w-full">Calculate</button>
+              <button onclick="calculateRectangleArea()" class="btn btn-primary btn-accent w-full">Calculate</button>
             </div>
           </div>
         </div>
@@ -78,16 +78,16 @@
             <h2 class="card-title">Parallelogram</h2>
             <p>Area (A) = b x h</p>
             <p class="my-2">
-              <input type="text" name="" id=""  class="border bg-gray-200 text-xl w-20 px-2 rounded-sm" placeholder="base">
+              <input type="text" name="" id="parallelogram-base"  class="border bg-gray-200 text-xl w-20 px-2 rounded-sm" placeholder="base">
               <span class="ml-3">cm</span>
-              <input type="text" name="" id=""  class="border bg-gray-200 text-xl w-20 px-2 ml-3 rounded-sm" placeholder="height">
+              <input type="text" name="" id="parallelogram-height"  class="border bg-gray-200 text-xl w-20 px-2 ml-3 rounded-sm" placeholder="height">
               <span class="ml-3">cm</span>
             </p>
             <div>
-              <p class="text-2xl">Area : <span class="font-semibold"></span> cm<sup>2</sup></p>
+              <p class="text-2xl">Area : <span id="parallelogram-area" class="font-semibold"></span> cm<sup>2</sup></p>
             </div>
             <div class="card-actions">
-              <button class="btn btn-primary btn-accent w-full">Calculate</button>
+              <button onclick="calculateParallelogramArea()" class="btn btn-primary btn-accent w-full">Calculate</button>
             </div>
           </div>
         </div>
@@ -102,16 +102,16 @@
             <h2 class="card-title">Rhombus</h2>
             <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
             <p class="my-2">
-              <input type="text" name="" id=""  class="border bg-gray-200 text-xl w-20 px-2 rounded-sm" placeholder="d1">
+              <input type="text" name="" id="first-angle"  class="border bg-gray-200 text-xl w-20 px-2 rounded-sm" placeholder="d1">
               <span class="ml-3">cm</span>
-              <input type="text" name="" id=""  class="border bg-gray-200 text-xl w-20 px-2 ml-3 rounded-sm" placeholder="d2">
+              <input type="text" name="" id="second-angle"  class="border bg-gray-200 text-xl w-20 px-2 ml-3 rounded-sm" placeholder="d2">
               <span class="ml-3">cm</span>
             </p>
             <div>
-              <p class="text-2xl">Area : <span class="font-semibold"></span> cm<sup>2</sup></p>
+              <p class="text-2xl">Area : <span id="rhombus-area" class="font-semibold"></span> cm<sup>2</sup></p>
             </div>
             <div class="card-actions">
-              <button class="btn btn-primary btn-accent w-full">Calculate</button>
+              <button onclick="calculateRhombusArea()" class="btn btn-primary btn-accent w-full">Calculate</button>
             </div>
           </div>
         </div>
@@ -126,16 +126,16 @@
             <h2 class="card-title">Pentagon</h2>
             <p>Area (A) = 0.5 x p x b</p>
             <p class="my-2">
-              <input type="text" name="" id=""  class="border bg-gray-200 text-xl w-20 px-2 rounded-sm" placeholder="p">
+              <input type="text" name="" id="pentagon-p"  class="border bg-gray-200 text-xl w-20 px-2 rounded-sm" placeholder="p">
               <span class="ml-3">cm</span>
-              <input type="text" name="" id=""  class="border bg-gray-200 text-xl w-20 px-2 ml-3 rounded-sm" placeholder="b">
+              <input type="text" name="" id="pentagon-b"  class="border bg-gray-200 text-xl w-20 px-2 ml-3 rounded-sm" placeholder="b">
               <span class="ml-3">cm</span>
             </p>
             <div>
-              <p class="text-2xl">Area : <span class="font-semibold"></span> cm<sup>2</sup></p>
+              <p class="text-2xl">Area : <span id="pentagon-area" class="font-semibold"></span> cm<sup>2</sup></p>
             </div>
             <div class="card-actions">
-              <button class="btn btn-primary btn-accent w-full">Calculate</button>
+              <button onclick="calculatePentagonArea()" class="btn btn-primary btn-accent w-full">Calculate</button>
             </div>
           </div>
         </div>
@@ -150,16 +150,16 @@
             <h2 class="card-title">Ellipse</h2>
             <p>Area (A) = πab</p>
             <p class="my-2">
-              <input type="text" name="" id=""  class="border bg-gray-200 text-xl w-20 px-2 rounded-sm" placeholder="a">
+              <input type="text" name="" id="ellipse-first-radius"  class="border bg-gray-200 text-xl w-20 px-2 rounded-sm" placeholder="a">
               <span class="ml-3">cm</span>
-              <input type="text" name="" id=""  class="border bg-gray-200 text-xl w-20 px-2 ml-3 rounded-sm" placeholder="b">
+              <input type="text" name="" id="ellipse-second-radius"  class="border bg-gray-200 text-xl w-20 px-2 ml-3 rounded-sm" placeholder="b">
               <span class="ml-3">cm</span>
             </p>
             <div>
-              <p class="text-2xl">Area : <span class="font-semibold"></span> cm<sup>2</sup></p>
+              <p class="text-2xl">Area : <span id="ellipse-area" class="font-semibold"></span> cm<sup>2</sup></p>
             </div>
             <div class="card-actions">
-              <button class="btn btn-primary btn-accent w-full">Calculate</button>
+              <button onclick="calculateEllipseArea()" class="btn btn-primary btn-accent w-full">Calculate</button>
             </div>
           </div>
         </div>
