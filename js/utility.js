@@ -6,15 +6,17 @@ function getInputFieldValue(inputId){
   return inputValue
 }
 
-function getTextElement(elementId){
-  const elementField = document.getElementById(elementId)
-  const elementFieldText = elementField.innerText
-  const element = parseFloat(elementFieldText)
-  elementField.value = ''
-  return element
-}
-
 function setElementValue(elementId,area){
   const element = document.getElementById(elementId)
   element.innerText = area
+}
+
+function addToDynamicCalculationEntry(areaType,area){
+  const calculationEntry = document.getElementById('calculation-entry')
+
+  const count = calculationEntry.childElementCount
+  const p = document.createElement('p')
+  p.classList.add('pl-5')
+  p.innerHTML =`${count+1}. ${areaType} ${area} cm<sup>2</sup> <button class = "btn btn-sm btn-accent gap-2 text-white mt-2">Convert to metre</button>`
+  calculationEntry.appendChild(p)
 }

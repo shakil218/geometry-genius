@@ -10,6 +10,8 @@ function calculateTriangleArea(){
   const Area = 0.5 * triangleBase * triangleHeight
 
   const triangleArea = setElementValue('triangle-area',Area)
+
+  addToDynamicCalculationEntry('Triangle',Area)
 }
 
 function calculateRectangleArea(){
@@ -24,6 +26,8 @@ function calculateRectangleArea(){
   const Area = rectangleWidth * rectangleLength
 
   const rectangleArea = setElementValue('rectangle-area',Area)
+
+  addToDynamicCalculationEntry('Rectangle',Area)
 }
 
 function calculateParallelogramArea(){
@@ -38,6 +42,8 @@ function calculateParallelogramArea(){
   const Area = parallelogramBase * parallelogramHeight
 
   const parallelogramArea = setElementValue('parallelogram-area',Area)
+
+  addToDynamicCalculationEntry('Parallelogram',Area)
 }
 
 function calculateRhombusArea(){
@@ -52,6 +58,8 @@ function calculateRhombusArea(){
   const Area = 0.5 * firstAngle * secondAngle
 
   const rhombusArea = setElementValue('rhombus-area',Area)
+
+  addToDynamicCalculationEntry('Rhombus',Area)
 }
 
 function calculatePentagonArea(){
@@ -66,6 +74,8 @@ function calculatePentagonArea(){
   const Area = 0.5 * pentagon_p * pentagon_B
 
   const pentagonArea = setElementValue('pentagon-area',Area)
+
+  addToDynamicCalculationEntry('Pentagon',Area)
 }
 
 function calculateEllipseArea(){
@@ -81,5 +91,5 @@ function calculateEllipseArea(){
 
   const ellipseArea = setElementValue('ellipse-area',Area)
 
-  
+  addToDynamicCalculationEntry('Ellipse',Area)
 }
